@@ -20,6 +20,10 @@
     margin-bottom: 1em;
   }
 
+  @media (prefers-color-scheme: dark) {
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+  }
+
   .divider {
     height: 50%;
 
@@ -49,6 +53,10 @@
 
     &.active {
       background: #80808042;
+
+      @media (prefers-color-scheme: dark) {
+        background: rgba(255, 255, 255, 0.12);
+      }
     }
   }
 }

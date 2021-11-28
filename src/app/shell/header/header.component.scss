@@ -1,6 +1,4 @@
-@import "src/theme/theme-variables";
-
-.navbar {
+.mat-toolbar.navbar {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -9,7 +7,6 @@
 }
 
 .brand {
-  color: mat-color($app-primary, "default-contrast");
   text-decoration: none;
   padding-right: 1rem;
 }
