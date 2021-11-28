@@ -7,8 +7,7 @@
 <div class="container {{ critter }}" [style.gridTemplateColumns]="'repeat(' + columnCount + ', 1fr)'">
   <app-critter-tile
     class="tile"
-    *ngFor="let d of data; index as i"
-    [matTooltip]="getValue(d.name, 'name')"
+    *ngFor="let d of data"
     [critter]="d"
     [highlightAvailable]="highlightAvailable"
     tabindex="0"

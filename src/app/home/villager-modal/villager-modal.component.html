@@ -7,7 +7,11 @@
       <mat-chip translate>{{ data.personality }}</mat-chip>
     </mat-chip-list>
     <mat-chip-list aria-label="Birthday">
-      <mat-chip color="primary">{{ data.birthdayString }}</mat-chip>
+      <mat-chip color="primary">
+        <span translate>{{ getMonthName(data.birthdayString) }}</span
+        >&nbsp;
+        <span translate>{{ getDate(data.birthdayString) }}</span>
+      </mat-chip>
     </mat-chip-list>
     <mat-chip-list aria-label="Hobby">
       <mat-chip color="accent" translate>{{ data.hobby }}</mat-chip>

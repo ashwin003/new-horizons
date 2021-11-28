@@ -2,6 +2,7 @@
   defaultImage="assets/villagers.png"
   [lazyLoad]="critter.icon_uri"
   class="critter-icon"
+  [matTooltip]="getValue(critter.name, 'name')"
   [attr.alt]="getValue(critter.name, 'name')"
   [class.highlighted]="highlighted"
   tabindex="-1"

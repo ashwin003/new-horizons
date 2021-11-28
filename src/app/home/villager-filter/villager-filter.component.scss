@@ -1,7 +1,12 @@
 .container {
-  min-width: 33vw;
+  min-width: 90vw;
   position: relative;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 56px);
+
+  @media screen and (min-width: 500px) {
+    min-width: 33vw;
+    height: calc(100vh - 64px);
+  }
 
   .footer-bar {
     position: absolute;

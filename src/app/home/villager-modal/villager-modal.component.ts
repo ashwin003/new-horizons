@@ -16,4 +16,12 @@ export class VillagerModalComponent implements OnInit {
   getValue(dictionary: Map<string, string>, prefix: string) {
     return this.translationService.getValue(dictionary, prefix);
   }
+
+  getMonthName(birthdayString: string): string {
+    return birthdayString.split(' ')[0];
+  }
+
+  getDate(birthdayString: string): string {
+    return birthdayString.split(' ')[1];
+  }
 }

@@ -26,6 +26,7 @@ import { SongTileComponent } from './song-tile/song-tile.component';
 import { SongsComponent } from './songs/songs.component';
 import { BackgroundMusicComponent } from './background-music/background-music.component';
 import { VillagerFilterComponent } from './villager-filter/villager-filter.component';
+import { SettingsModalComponent } from './settings-modal/settings-modal.component';
 
 @NgModule({
   imports: [
@@ -56,6 +57,7 @@ import { VillagerFilterComponent } from './villager-filter/villager-filter.compo
     SongsComponent,
     BackgroundMusicComponent,
     VillagerFilterComponent,
+    SettingsModalComponent,
   ],
 })
 export class HomeModule {}
