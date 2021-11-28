@@ -1,0 +1,25 @@
+.container {
+  min-width: 33vw;
+  position: relative;
+  height: calc(100vh - 64px);
+
+  .footer-bar {
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+
+    button {
+      width: 100%;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.mat-selection-list {
+  max-height: 50vh;
+  overflow: auto;
+}

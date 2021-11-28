@@ -1,0 +1,5 @@
+<div class="container">
+  <mat-card class="music {{ song.weather }}" *ngFor="let song of songs">
+    {{ getHourDisplayText(song.hour) }}&nbsp;<span translate>{{ song.weather }}</span>
+  </mat-card>
+</div>

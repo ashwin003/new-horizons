@@ -1,0 +1,6 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ getValue(song.name, 'name') }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image defaultImage="assets/villagers.png" [lazyLoad]="song.imageUri" />
+</mat-card>

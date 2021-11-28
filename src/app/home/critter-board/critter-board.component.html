@@ -1,0 +1,18 @@
+<div class="highlight-container">
+  <mat-checkbox class="highlight-check" (change)="checkboxChanged($event)">
+    <span translate>Highlight currently available</span>
+  </mat-checkbox>
+</div>
+<mat-divider></mat-divider>
+<div class="container {{ critter }}" [style.gridTemplateColumns]="'repeat(' + columnCount + ', 1fr)'">
+  <app-critter-tile
+    class="tile"
+    *ngFor="let d of data; index as i"
+    [matTooltip]="getValue(d.name, 'name')"
+    [critter]="d"
+    [highlightAvailable]="highlightAvailable"
+    tabindex="0"
+    (click)="openDialog(d)"
+  >
+  </app-critter-tile>
+</div>

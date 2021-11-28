@@ -1,0 +1,13 @@
+<mat-card (click)="openModal()">
+  <mat-card-header>
+    <div mat-card-avatar class="avatar" [style.backgroundImage]="'url(' + villager.iconUri + ')'"></div>
+    <mat-card-title>{{ getValue(villager.name, 'name') }}</mat-card-title>
+    <mat-card-subtitle translate>{{ villager.species }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    defaultImage="assets/villagers.png"
+    [lazyLoad]="villager.imageUri"
+    [attr.alt]="getValue(villager.name, 'name')"
+  />
+</mat-card>

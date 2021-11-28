@@ -1,0 +1,110 @@
+<div class="container">
+  <mat-toolbar> <span translate>Filter</span>&nbsp;<span translate>Villagers</span> </mat-toolbar>
+  <mat-accordion class="content">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title translate> Species </mat-panel-title>
+        <mat-panel-description>
+          <mat-chip-list aria-label="Selected Species">
+            <mat-chip *ngFor="let species of species.selectedOptions.selected" translate>{{ species.value }}</mat-chip>
+          </mat-chip-list>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-selection-list #species>
+        <mat-list-option *ngFor="let species of availableSpecies" [value]="species">
+          <span translate>{{ species }}</span>
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title translate> Personality </mat-panel-title>
+        <mat-panel-description>
+          <mat-chip-list aria-label="Selected Personalities">
+            <mat-chip *ngFor="let personality of personalities.selectedOptions.selected" translate>
+              {{ personality.value }}
+            </mat-chip>
+          </mat-chip-list>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-selection-list #personalities>
+        <mat-list-option *ngFor="let personality of availablePersonalities" [value]="personality">
+          <span translate>{{ personality }}</span>
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title translate> Hobby </mat-panel-title>
+        <mat-panel-description>
+          <mat-chip-list aria-label="Selected Hobbies">
+            <mat-chip *ngFor="let hobby of hobbies.selectedOptions.selected" translate>
+              {{ hobby.value }}
+            </mat-chip>
+          </mat-chip-list>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-selection-list #hobbies>
+        <mat-list-option *ngFor="let hobby of availableHobbies" [value]="hobby">
+          <span translate>{{ hobby }}</span>
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title translate> Gender </mat-panel-title>
+        <mat-panel-description>
+          <mat-chip-list aria-label="Selected Genders">
+            <mat-chip *ngFor="let gender of genders.selectedOptions.selected" translate>
+              {{ gender.value }}
+            </mat-chip>
+          </mat-chip-list>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-selection-list #genders>
+        <mat-list-option *ngFor="let gender of availableGenders" [value]="gender">
+          <span translate>{{ gender }}</span>
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-toolbar class="footer-bar">
+    <button
+      mat-raised-button
+      color="warn"
+      class="clear-filter-button"
+      (click)="
+        species.deselectAll();
+        personalities.deselectAll();
+        hobbies.deselectAll();
+        genders.deselectAll();
+        submitSelctions(
+          species.selectedOptions.selected,
+          personalities.selectedOptions.selected,
+          hobbies.selectedOptions.selected,
+          genders.selectedOptions.selected
+        )
+      "
+    >
+      <span translate>Clear</span>
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      class="filter-button"
+      (click)="
+        submitSelctions(
+          species.selectedOptions.selected,
+          personalities.selectedOptions.selected,
+          hobbies.selectedOptions.selected,
+          genders.selectedOptions.selected
+        )
+      "
+    >
+      <span translate>Apply</span>
+    </button>
+  </mat-toolbar>
+</div>

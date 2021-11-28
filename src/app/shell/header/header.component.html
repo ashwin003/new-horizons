@@ -1,0 +1,32 @@
+<mat-toolbar class="mat-elevation-z6 navbar" color="primary">
+  <div fxHide.gt-sm fxLayoutAlign="start center">
+    <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="title">{{ title }}</span>
+  </div>
+  <div fxHide.lt-md>
+    <button mat-button routerLink="/villagers" routerLinkActive="active">
+      <mat-icon>pets</mat-icon>
+      <span translate>Villagers</span>
+    </button>
+    <button mat-button routerLink="/critter" routerLinkActive="active">
+      <mat-icon>emoji_nature</mat-icon>
+      <span translate>Critter</span>
+    </button>
+    <button mat-button routerLink="/museum" routerLinkActive="active">
+      <mat-icon>museum</mat-icon>
+      <span translate>Museum</span>
+    </button>
+    <button mat-button routerLink="/songs" routerLinkActive="active">
+      <mat-icon>music_note</mat-icon>
+      <span translate>Music</span>
+    </button>
+    <button mat-button routerLink="/about" routerLinkActive="active">
+      <mat-icon>info</mat-icon>
+      <span translate>About</span>
+    </button>
+  </div>
+  <span fxFlex></span>
+  <app-language-selector [icon]="true"></app-language-selector>
+</mat-toolbar>

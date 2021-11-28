@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <span translate>Seasonality</span>
+</mat-toolbar>
+<div class="container">
+  <div
+    class="month open-sans"
+    *ngFor="let month of months; index as i"
+    [class.available]="isAvailable(i)"
+    [class.current]="i == currentMonth"
+    translate
+  >
+    {{ month }}
+  </div>
+</div>

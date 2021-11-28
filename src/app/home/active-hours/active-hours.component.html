@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <span translate>Active Hours</span>
+</mat-toolbar>
+<span class="current-time" [style.left]="dayPercent + '%'"></span>
+<div class="container">
+  <div class="hour" *ngFor="let hour of hours">
+    <mat-divider
+      vertical="true"
+      class="divider"
+      [class.full]="needsFullHeight(hour)"
+      [class.active]="isActiveIn(hour)"
+      [attr.data-hour]="convertTo12Hour(hour)"
+      [attr.data-tod]="toTOD(hour)"
+    ></mat-divider>
+  </div>
+</div>

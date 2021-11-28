@@ -1,0 +1,21 @@
+<mat-sidenav-container>
+  <mat-sidenav class="filter-sidenav" #villagerfilter mode="over" ngClass.gt-sm="has-border" position="end">
+    <app-villager-filter
+      class="villager-filter"
+      [villagers]="villagers"
+      (filterParametersChanged)="onFilterChanged($event)"
+    ></app-villager-filter>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="filter-container">
+      <button class="filter-villagers" mat-icon-button color="primary" (click)="villagerfilter.toggle()">
+        <mat-icon>filter_list</mat-icon>
+      </button>
+    </div>
+    <div class="container">
+      <div *ngFor="let villager of filteredVillagers" class="tile">
+        <app-villager-tile [villager]="villager"></app-villager-tile>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

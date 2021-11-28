@@ -1,0 +1,7 @@
+.critter-icon {
+  transform: scale(0.5);
+
+  &.highlighted {
+    filter: drop-shadow(2px 5px 10px currentColor);
+  }
+}

@@ -1,0 +1,21 @@
+<mat-toolbar class="open-sans" color="primary">
+  <h2 mat-dialog-title>{{ getValue(data.name, 'name') }}</h2>
+</mat-toolbar>
+<mat-dialog-content [style.backgroundImage]="'url(' + data.imageUri + ')'">
+  <div class="container">
+    <mat-chip-list aria-label="Personality">
+      <mat-chip translate>{{ data.personality }}</mat-chip>
+    </mat-chip-list>
+    <mat-chip-list aria-label="Birthday">
+      <mat-chip color="primary">{{ data.birthdayString }}</mat-chip>
+    </mat-chip-list>
+    <mat-chip-list aria-label="Hobby">
+      <mat-chip color="accent" translate>{{ data.hobby }}</mat-chip>
+    </mat-chip-list>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <blockquote [class]="data.gender">
+    {{ getValue(data.catchTranslations, 'catch') }}
+  </blockquote>
+</mat-dialog-actions>

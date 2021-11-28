@@ -1,0 +1,10 @@
+<mat-toolbar class="open-sans" color="primary">
+  <h2 mat-dialog-title>{{ getValue(data.name, 'name') }}</h2>
+</mat-toolbar>
+<mat-dialog-content>
+  <div class="container">
+    <img defaultImage="assets/villagers.png" [lazyLoad]="data.image_uri" class="critter-image" />
+    <app-seasonality class="seasonality" [availableMonths]="data.availability.monthArrayNorthern"></app-seasonality>
+    <app-active-hours class="active-hours" [activeHours]="data.availability.timeArray"></app-active-hours>
+  </div>
+</mat-dialog-content>

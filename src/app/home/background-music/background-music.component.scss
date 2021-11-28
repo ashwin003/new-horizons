@@ -1,0 +1,42 @@
+.container {
+  overflow-x: hidden;
+  display: grid !important;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  margin: 0 1em;
+  padding: 1em 0;
+  padding-right: 1em;
+  height: calc(100vh - 112px);
+  margin-right: 0;
+
+  @media screen and (min-width: 500px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media screen and (min-width: 1500px) {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: linear-gradient(var(--c1, white), var(--c2, white));
+
+    &.Rainy {
+      --c1: #616161;
+      --c2: #9bc5c3;
+    }
+
+    &.Sunny {
+      --c1: #ff4e50;
+      --c2: #f9d423;
+    }
+
+    &.Snowy {
+      --c1: #e6dada;
+      --c2: #274046;
+    }
+  }
+}

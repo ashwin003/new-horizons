@@ -1,0 +1,54 @@
+.mat-toolbar {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.current-time {
+  position: absolute;
+  width: 2px;
+  height: 50%;
+  background: #d2122e;
+  bottom: 0;
+  margin-left: calc(100% / 24);
+}
+.container {
+  height: calc(100% - 5.25em);
+  min-height: 150px;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 1em;
+  }
+
+  .divider {
+    height: 50%;
+
+    &.full {
+      height: 100%;
+      position: relative;
+
+      &::before {
+        content: attr(data-hour);
+        font-family: "Open Sans", sans-serif;
+        position: absolute;
+        left: 10%;
+      }
+    }
+
+    &[data-hour="12"]::after {
+      content: attr(data-tod);
+      font-family: "Open Sans", sans-serif;
+      position: relative;
+      left: 120%;
+    }
+
+    &:not(.full) {
+      position: relative;
+      top: 50%;
+    }
+
+    &.active {
+      background: #80808042;
+    }
+  }
+}

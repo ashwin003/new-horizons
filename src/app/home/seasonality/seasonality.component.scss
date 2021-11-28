@@ -1,0 +1,27 @@
+.mat-toolbar {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 1em;
+  }
+
+  .month {
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+
+    &.available {
+      background: #80808042;
+    }
+
+    &.current {
+      border-color: #d2122e;
+    }
+  }
+}
