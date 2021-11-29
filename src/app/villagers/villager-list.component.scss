@@ -17,6 +17,11 @@
 
   @media screen and (min-width: 500px) {
     height: calc(100vh - 120px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 599px) {
+    height: calc(100vh - 120px);
     grid-template-columns: repeat(3, 1fr);
   }
 

@@ -4,4 +4,9 @@
 
 .mat-card {
   padding-bottom: 0;
+  overflow: hidden;
+
+  .mat-card-image {
+    margin-bottom: -4px;
+  }
 }
