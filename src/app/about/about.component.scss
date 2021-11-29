@@ -1,6 +1,20 @@
+@import "../../theme/theme-variables.scss";
+
+@font-face {
+  font-family: "FinkHeavy";
+  src: url("/assets/fonts/finkheavy.ttf") format("truetype");
+}
+
 .container {
   text-align: center;
   padding: 1rem;
+
+  .title {
+    font-family: "FinkHeavy";
+    font-variant: small-caps;
+    color: map-get($map: $light-primary, $key: 500);
+    letter-spacing: 5px;
+  }
 }
 
 .mat-icon {

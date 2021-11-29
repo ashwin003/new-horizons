@@ -1,3 +1,5 @@
+@import "../../../theme/theme-variables.scss";
+
 .mat-toolbar {
   margin-bottom: 1em;
   text-transform: uppercase;
@@ -21,7 +23,11 @@
     }
 
     &.current {
-      border-color: #d2122e;
+      border-color: map-get($map: $light-accent, $key: "A400");
+
+      @media (prefers-color-scheme: dark) {
+        border-color: map-get($map: $dark-accent, $key: "A400");
+      }
     }
   }
 }

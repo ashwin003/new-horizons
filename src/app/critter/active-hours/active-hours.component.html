@@ -10,7 +10,7 @@
       [class.full]="needsFullHeight(hour)"
       [class.active]="isActiveIn(hour)"
       [attr.data-hour]="convertTo12Hour(hour)"
-      [attr.data-tod]="toTOD(hour)"
+      [attr.data-tod]="toTOD(hour) | translate"
     ></mat-divider>
   </div>
 </div>

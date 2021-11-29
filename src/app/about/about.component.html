@@ -1,8 +1,12 @@
 <div class="container">
   <mat-card>
-    <h1>
-      <mat-card-title translate>APP_NAME</mat-card-title>
-    </h1>
+    <mat-card-title class="title">
+      <h1 translate>APP_NAME</h1>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <span translate>Data from</span>&nbsp;
+      <a href="http://acnhapi.com/">http://acnhapi.com/</a>
+    </mat-card-subtitle>
     <mat-card-content>
       <mat-icon>code</mat-icon>
       <span translate>Version</span> {{ version }}
