@@ -8,10 +8,8 @@ import { MaterialModule } from '@app/material.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 
-import { SettingsModalComponent } from './settings-modal/settings-modal.component';
-
 @NgModule({
   imports: [CommonModule, TranslateModule, SharedModule, FlexLayoutModule, MaterialModule, HomeRoutingModule],
-  declarations: [HomeComponent, SettingsModalComponent],
+  declarations: [HomeComponent],
 })
 export class HomeModule {}

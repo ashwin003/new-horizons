@@ -8,6 +8,6 @@
 </ng-template>
 <mat-menu #languageMenu="matMenu">
   <button mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">
-    {{ language }}
+    {{ language }} <mat-icon *ngIf="currentLanguage == language">check</mat-icon>
   </button>
 </mat-menu>

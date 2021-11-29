@@ -32,5 +32,8 @@
     </button>
   </div>
   <span fxFlex></span>
-  <app-language-selector [icon]="true"></app-language-selector>
+  <button mat-icon-button (click)="openSettingsModal()">
+    <mat-icon>settings</mat-icon>
+  </button>
+  <!-- <app-language-selector [icon]="true"></app-language-selector> -->
 </mat-toolbar>

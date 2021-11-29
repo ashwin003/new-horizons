@@ -9,8 +9,11 @@ import { MaterialModule } from '@app/material.module';
 import { ShellComponent } from './shell.component';
 import { HeaderComponent } from './header/header.component';
 
+import { SettingsModalComponent } from './settings-modal/settings-modal.component';
+import { HemisphereSelectorComponent } from './hemisphere-selector/hemisphere-selector.component';
+
 @NgModule({
   imports: [CommonModule, TranslateModule, FlexLayoutModule, MaterialModule, I18nModule, RouterModule],
-  declarations: [HeaderComponent, ShellComponent],
+  declarations: [HeaderComponent, SettingsModalComponent, ShellComponent, HemisphereSelectorComponent],
 })
 export class ShellModule {}

@@ -1,0 +1,8 @@
+<button mat-icon-button [matMenuTriggerFor]="hemisphereMenu">
+  <mat-icon>public</mat-icon>
+</button>
+<mat-menu #hemisphereMenu="matMenu">
+  <button mat-menu-item *ngFor="let hemisphere of available_hemispheres" (click)="setHemisphere(hemisphere)">
+    {{ hemisphere | uppercase }} <mat-icon *ngIf="selected_hemisphere == hemisphere">check</mat-icon>
+  </button>
+</mat-menu>
