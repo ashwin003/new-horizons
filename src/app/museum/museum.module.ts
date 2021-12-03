@@ -9,9 +9,11 @@ import { MuseumRoutingModule } from './museum-routing.module';
 import { MuseumComponent } from './museum.component';
 import { FossilsComponent } from './fossils/fossils.component';
 import { ArtComponent } from './art/art.component';
+import { FossilModalComponent } from './fossil-modal/fossil-modal.component';
+import { ArtModalComponent } from './art-modal/art-modal.component';
 
 @NgModule({
-  declarations: [MuseumComponent, FossilsComponent, ArtComponent],
+  declarations: [MuseumComponent, FossilsComponent, ArtComponent, FossilModalComponent, ArtModalComponent],
   imports: [CommonModule, TranslateModule, SharedModule, MaterialModule, LazyLoadImageModule, MuseumRoutingModule],
 })
 export class MuseumModule {}

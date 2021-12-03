@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   quote: string | undefined;
   isLoading = false;
-
+  count = 69;
   constructor() {}
 
   ngOnInit() {}
