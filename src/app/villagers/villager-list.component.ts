@@ -6,6 +6,7 @@ import { VillagerService } from './services/villager.service';
 import { filter } from 'rxjs/operators';
 import { UntilDestroy, untilDestroyed } from '@shared';
 
+@UntilDestroy()
 @Component({
   selector: 'app-villager-list',
   templateUrl: './villager-list.component.html',
