@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FavoriteService } from '@app/@shared/services/favorite.service';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   quote: string | undefined;
   isLoading = false;
+  count = 69;
 
-  constructor() {}
+  constructor(private favoriteService: FavoriteService) {}
 
   ngOnInit() {}
 }

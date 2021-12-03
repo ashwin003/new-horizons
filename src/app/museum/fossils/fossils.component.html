@@ -1,5 +1,10 @@
 <div class="container">
-  <div class="fossil" *ngFor="let fossil of fossils" [matTooltip]="getValue(fossil.name, 'name')">
-    <img defaultImage="assets/villagers.png" [lazyLoad]="fossil.image_uri" class="fossil-icon" />
+  <div
+    class="fossil"
+    *ngFor="let fossil of fossils"
+    [matTooltip]="getValue(fossil.name, 'name')"
+    (click)="openModal(fossil)"
+  >
+    <img defaultImage="assets/villagers.png" [lazyLoad]="fossil.imageUri" class="fossil-icon" />
   </div>
 </div>

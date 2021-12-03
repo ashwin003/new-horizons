@@ -1,14 +1,23 @@
 <div class="container">
-  <mat-card>
-    <p>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo" />
-    </p>
-    <mat-card-content>
-      <mat-card-title translate>Hello world !</mat-card-title>
-      <mat-card-subtitle>
-        <app-loader [isLoading]="isLoading" [size]="1.5"></app-loader>
-        <q [hidden]="isLoading">Chuck Norris</q>
-      </mat-card-subtitle>
-    </mat-card-content>
-  </mat-card>
+  <app-counter class="art" header="Art" [count]="count" headerType="primary" [isLoading]="isLoading"></app-counter>
+  <app-counter
+    class="fossils"
+    header="Fossils"
+    [count]="count"
+    headerType="accent"
+    [isLoading]="isLoading"
+  ></app-counter>
+
+  <app-counter
+    class="insects"
+    header="Insects"
+    [count]="count"
+    headerType="default"
+    [isLoading]="isLoading"
+  ></app-counter>
+  <app-counter class="fish" header="Fish" [count]="count" headerType="primary" [isLoading]="isLoading"></app-counter>
+  <app-counter class="sea" header="Sea Creatures" [count]="count" [isLoading]="isLoading"></app-counter>
+
+  <app-owned-songs class="owned"></app-owned-songs>
+  <app-upcoming-birthdays class="birthdays"></app-upcoming-birthdays>
 </div>

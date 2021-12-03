@@ -20,16 +20,6 @@ export class VillagerListComponent implements OnInit {
 
   ngOnInit(): void {
     this.villagerService.getAll().subscribe((villagers) => (this.villagers = villagers));
-
-    this.media
-      .asObservable()
-      .pipe(
-        filter((changes: MediaChange[]) =>
-          changes.some((change) => change.mqAlias !== 'xs' && change.mqAlias !== 'sm')
-        ),
-        untilDestroyed(this)
-      )
-      .subscribe(() => this.villagerfilter.close());
   }
 
   onFilterChanged(filterParameters: Map<string, any[]>) {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BackgroundMusic } from '../models/backgroundMusic';
 import { BackgroundMusicService } from '../services/background-music.service';
+import { MusicService } from '../services/music.service';
 
 @Component({
   selector: 'app-background-music',
@@ -9,10 +10,18 @@ import { BackgroundMusicService } from '../services/background-music.service';
 })
 export class BackgroundMusicComponent implements OnInit {
   songs: BackgroundMusic[] = [];
-  constructor(private backgroundMusicService: BackgroundMusicService) {}
+  constructor(private backgroundMusicService: BackgroundMusicService, private musicService: MusicService) {}
 
   ngOnInit(): void {
     this.backgroundMusicService.getAll().subscribe((songs) => (this.songs = songs));
+  }
+
+  isPlaying(uri: string) {
+    return this.musicService.isPlaying(uri);
+  }
+
+  icon(uri: string) {
+    return this.isPlaying(uri) ? 'pause' : 'play_arrow';
   }
 
   getHourDisplayText(hour: number): string {

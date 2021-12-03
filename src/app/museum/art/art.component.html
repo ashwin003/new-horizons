@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="art" *ngFor="let art of artWorks" [matTooltip]="getValue(art.name, 'name')">
-    <img defaultImage="assets/villagers.png" [lazyLoad]="art.image_uri" class="art-icon" />
+  <div class="art" *ngFor="let art of artWorks" [matTooltip]="getValue(art.name, 'name')" (click)="openModal(art)">
+    <img defaultImage="assets/villagers.png" [lazyLoad]="art.imageUri" class="art-icon" />
   </div>
 </div>

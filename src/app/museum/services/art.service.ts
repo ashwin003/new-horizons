@@ -11,6 +11,14 @@ export class ArtService {
   getAll() {
     return this.httpClient
       .get<Map<string, Object>>('/v1/art')
-      .pipe(map((v: Map<string, Object>) => Object.keys(v).map((k) => v[k])));
+      .pipe(map((r: Map<string, Object>) => Object.keys(r).map((d) => this.convertToArt(r[d]))));
+  }
+
+  private convertToArt(critter: Map<string, any>) {
+    critter['fileName'] = critter['file-name'];
+    critter['museumPhrase'] = critter['museum-desc'];
+    critter['imageUri'] = critter['image_uri'];
+
+    return critter;
   }
 }

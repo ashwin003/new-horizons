@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ArtService } from '../services/art.service';
 import { TranslationService } from '@shared/services/translation.service';
+import { MatDialog } from '@angular/material/dialog';
+import { ArtModalComponent } from '../art-modal/art-modal.component';
 
 @Component({
   selector: 'app-art',
@@ -9,7 +11,11 @@ import { TranslationService } from '@shared/services/translation.service';
 })
 export class ArtComponent implements OnInit {
   artWorks: any[] = [];
-  constructor(private artService: ArtService, private translationService: TranslationService) {}
+  constructor(
+    private artService: ArtService,
+    private translationService: TranslationService,
+    private matDialog: MatDialog
+  ) {}
 
   ngOnInit(): void {
     this.artService.getAll().subscribe((response) => {
@@ -19,5 +25,11 @@ export class ArtComponent implements OnInit {
 
   getValue(dictionary: Map<string, string>, prefix: string) {
     return this.translationService.getValue(dictionary, prefix);
+  }
+
+  openModal(artwork: any) {
+    this.matDialog.open(ArtModalComponent, {
+      data: artwork,
+    });
   }
 }

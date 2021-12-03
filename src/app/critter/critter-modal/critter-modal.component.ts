@@ -1,7 +1,9 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { FavoriteService } from '@app/@shared/services/favorite.service';
 import { HemisphereSelectorService } from '@app/shell/services/hemisphere-selector.service';
 import { TranslationService } from '@shared/services/translation.service';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-critter-modal',
@@ -11,10 +13,12 @@ import { TranslationService } from '@shared/services/translation.service';
 export class CritterModalComponent implements OnInit {
   constructor(
     private translationService: TranslationService,
+    private favoriteService: FavoriteService,
     private hemisphereSelectorService: HemisphereSelectorService,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {}
 
+  starticon$ = this.favoriteService.exists(this.data.fileName).pipe(map((e) => (e ? 'star' : 'star_border')));
   ngOnInit(): void {
     // {icon_uri: string, image_uri: string, name: Map<string, string>, availability: Availability}
   }
