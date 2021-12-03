@@ -7,7 +7,7 @@ import { TimeService } from '@shared/services/time.service';
   styleUrls: ['./active-hours.component.scss'],
 })
 export class ActiveHoursComponent implements OnInit {
-  hours = Array.from(Array(24).keys());
+  hours = Array.from(Array(23).keys());
   dayPercent: number = 0.0;
   @Input() activeHours: number[] = [];
   constructor(private timeService: TimeService) {}

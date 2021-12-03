@@ -29,18 +29,3 @@ body {
   padding: 0 24px !important;
   padding-top: 12px !important;
 }
-
-.spacer {
-  flex: 1 1 auto;
-}
-
-.mat-divider-vertical {
-  border-right-color: transparent;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-right-width: 0;
-  border-left-color: rgba(0, 0, 0, 0.12);
-  @media (prefers-color-scheme: dark) {
-    border-left-color: rgba(255, 255, 255, 0.12);
-  }
-}

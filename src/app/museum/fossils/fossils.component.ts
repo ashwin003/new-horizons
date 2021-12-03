@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FossilService } from '../services/fossil.service';
 import { TranslationService } from '@shared/services/translation.service';
-import { MatDialog } from '@angular/material/dialog';
-import { FossilModalComponent } from '../fossil-modal/fossil-modal.component';
 
 @Component({
   selector: 'app-fossils',
@@ -11,11 +9,7 @@ import { FossilModalComponent } from '../fossil-modal/fossil-modal.component';
 })
 export class FossilsComponent implements OnInit {
   fossils: any[] = [];
-  constructor(
-    private fossilService: FossilService,
-    private translationService: TranslationService,
-    private matDialog: MatDialog
-  ) {}
+  constructor(private fossilService: FossilService, private translationService: TranslationService) {}
 
   ngOnInit(): void {
     this.fossilService.getAll().subscribe((response) => (this.fossils = response));
@@ -23,11 +17,5 @@ export class FossilsComponent implements OnInit {
 
   getValue(dictionary: Map<string, string>, prefix: string) {
     return this.translationService.getValue(dictionary, prefix);
-  }
-
-  openModal(fossil: any) {
-    this.matDialog.open(FossilModalComponent, {
-      data: fossil,
-    });
   }
 }

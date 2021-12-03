@@ -18,7 +18,6 @@
   "Sea Creatures": "Créatures de la mer",
   "Seasonality": "Saisonnalité",
   "Songs": "Chansons",
-  "Upcoming Birthdays": "Prochains anniversaires",
   "Version": "Version",
   "Villagers": "Villageois",
 
@@ -122,6 +121,6 @@
   "7 PM": "1 PM",
   "8 PM": "1 PM",
   "9 PM": "1 PM",
-  "10 PM": "10 PM",
-  "11 PM": "11 PM"
+  "10 PM": "1 PM",
+  "11 PM": "1 PM"
 }

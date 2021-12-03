@@ -5,11 +5,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from '@app/material.module';
 import { LoaderComponent } from './loader/loader.component';
-import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   imports: [FlexLayoutModule, MaterialModule, TranslateModule, CommonModule],
-  declarations: [LoaderComponent, CounterComponent],
-  exports: [LoaderComponent, CounterComponent],
+  declarations: [LoaderComponent],
+  exports: [LoaderComponent],
 })
 export class SharedModule {}
