@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Song } from '../models/song';
 import { TranslationService } from '@shared/services/translation.service';
+import { PlayService } from '../services/play.service';
 
 @Component({
   selector: 'app-song-tile',
@@ -15,11 +16,19 @@ export class SongTileComponent implements OnInit {
     musicUri: '',
     name: new Map(),
   };
-  constructor(private translationService: TranslationService) {}
+  constructor(private translationService: TranslationService, private playService: PlayService) {}
 
   ngOnInit(): void {}
 
   getValue(dictionary: Map<string, string>, prefix: string) {
     return this.translationService.getValue(dictionary, prefix);
+  }
+
+  get icon() {
+    return this.playService.isPlaying(this.song.musicUri) ? 'pause' : 'play_arrow';
+  }
+
+  togglePlayPause() {
+    this.playService.togglePlayPause(this.song.musicUri);
   }
 }

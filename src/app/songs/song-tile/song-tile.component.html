@@ -1,6 +1,10 @@
 <mat-card>
   <mat-card-header>
     <mat-card-title>{{ getValue(song.name, 'name') }}</mat-card-title>
+    <span class="spacer"></span>
+    <button mat-icon-button (click)="togglePlayPause()">
+      <mat-icon>{{ icon }}</mat-icon>
+    </button>
   </mat-card-header>
   <img mat-card-image defaultImage="assets/villagers.png" [lazyLoad]="song.imageUri" />
 </mat-card>

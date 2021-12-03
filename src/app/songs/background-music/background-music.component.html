@@ -1,5 +1,12 @@
 <div class="container">
   <mat-card class="music {{ song.weather }}" *ngFor="let song of songs">
-    <span translate>{{ getHourDisplayText(song.hour) }}</span> &nbsp;<span translate>{{ song.weather }}</span>
+    <span>
+      <span translate>{{ getHourDisplayText(song.hour) }}</span> &nbsp;<span translate>{{ song.weather }}</span>
+    </span>
+    <button mat-icon-button (click)="togglePlayPause(song.musicUri)">
+      <mat-icon>
+        {{ getIcon(song.musicUri) }}
+      </mat-icon>
+    </button>
   </mat-card>
 </div>
