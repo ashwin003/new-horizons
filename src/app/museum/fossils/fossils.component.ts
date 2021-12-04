@@ -3,6 +3,8 @@ import { FossilService } from '../services/fossil.service';
 import { TranslationService } from '@shared/services/translation.service';
 import { MatDialog } from '@angular/material/dialog';
 import { FossilModalComponent } from '../fossil-modal/fossil-modal.component';
+import { SavedEntityService } from '@app/@shared/services/saved-entity.service';
+import { MatCheckboxChange } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-fossils',
@@ -11,15 +13,29 @@ import { FossilModalComponent } from '../fossil-modal/fossil-modal.component';
 })
 export class FossilsComponent implements OnInit {
   fossils: any[] = [];
+  submittedFossils: string[] = [];
+  highlightPending = false;
 
   constructor(
     private fossilService: FossilService,
     private translationService: TranslationService,
+    private savedEntityService: SavedEntityService,
     private matDialog: MatDialog
   ) {}
 
   ngOnInit(): void {
     this.fossilService.getAll().subscribe((response) => (this.fossils = this.sortData(response)));
+    this.savedEntityService
+      .getAll('Fossil')
+      .subscribe((response) => (this.submittedFossils = response.map((r) => r.fileName)));
+  }
+
+  isPending(fileName: string): boolean {
+    return this.highlightPending && !this.submittedFossils.includes(fileName);
+  }
+
+  checkboxChanged(event: MatCheckboxChange) {
+    this.highlightPending = event.checked;
   }
 
   sortData(data: any[]) {

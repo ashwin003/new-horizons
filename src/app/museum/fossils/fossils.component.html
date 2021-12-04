@@ -1,3 +1,9 @@
+<div class="highlight-container">
+  <mat-checkbox class="highlight-check" (change)="checkboxChanged($event)">
+    <span translate>Highlight pending</span>
+  </mat-checkbox>
+</div>
+<mat-divider></mat-divider>
 <div class="container">
   <div
     class="fossil"
@@ -5,6 +11,11 @@
     [matTooltip]="getValue(fossil.name, 'name')"
     (click)="openModal(fossil)"
   >
-    <img defaultImage="assets/villagers.png" [lazyLoad]="fossil.imageUri" class="fossil-icon" />
+    <img
+      defaultImage="assets/villagers.png"
+      [lazyLoad]="fossil.imageUri"
+      class="fossil-icon"
+      [class.highlighted]="isPending(fossil['file-name'])"
+    />
   </div>
 </div>

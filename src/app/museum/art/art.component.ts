@@ -3,6 +3,8 @@ import { ArtService } from '../services/art.service';
 import { TranslationService } from '@shared/services/translation.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ArtModalComponent } from '../art-modal/art-modal.component';
+import { SavedEntityService } from '@app/@shared/services/saved-entity.service';
+import { MatCheckboxChange } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-art',
@@ -11,9 +13,12 @@ import { ArtModalComponent } from '../art-modal/art-modal.component';
 })
 export class ArtComponent implements OnInit {
   artWorks: any[] = [];
+  submittedArtworks: string[] = [];
+  highlightPending = false;
   constructor(
     private artService: ArtService,
     private translationService: TranslationService,
+    private savedEntityService: SavedEntityService,
     private matDialog: MatDialog
   ) {}
 
@@ -21,6 +26,17 @@ export class ArtComponent implements OnInit {
     this.artService.getAll().subscribe((response) => {
       this.artWorks = response;
     });
+    this.savedEntityService
+      .getAll('Art')
+      .subscribe((response) => (this.submittedArtworks = response.map((r) => r.fileName)));
+  }
+
+  isPending(fileName: string): boolean {
+    return this.highlightPending && !this.submittedArtworks.includes(fileName);
+  }
+
+  checkboxChanged(event: MatCheckboxChange) {
+    this.highlightPending = event.checked;
   }
 
   getValue(dictionary: Map<string, string>, prefix: string) {

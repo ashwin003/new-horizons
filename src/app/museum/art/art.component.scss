@@ -1,3 +1,9 @@
+.highlight-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1em;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -17,6 +23,12 @@
 
     &:hover {
       background: #80808042;
+    }
+
+    .art-icon {
+      &.highlighted {
+        filter: drop-shadow(2px 5px 10px currentColor);
+      }
     }
   }
 }

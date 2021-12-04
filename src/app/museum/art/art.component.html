@@ -1,5 +1,16 @@
+<div class="highlight-container">
+  <mat-checkbox class="highlight-check" (change)="checkboxChanged($event)">
+    <span translate>Highlight pending</span>
+  </mat-checkbox>
+</div>
+<mat-divider></mat-divider>
 <div class="container">
   <div class="art" *ngFor="let art of artWorks" [matTooltip]="getValue(art.name, 'name')" (click)="openModal(art)">
-    <img defaultImage="assets/villagers.png" [lazyLoad]="art.imageUri" class="art-icon" />
+    <img
+      defaultImage="assets/villagers.png"
+      [lazyLoad]="art.imageUri"
+      class="art-icon"
+      [class.highlighted]="isPending(art['file-name'])"
+    />
   </div>
 </div>
