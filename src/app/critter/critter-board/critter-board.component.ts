@@ -12,6 +12,7 @@ import { TranslationService } from '@shared/services/translation.service';
 })
 export class CritterBoardComponent implements OnInit {
   @Input() critter = '';
+  @Input() entityType = '';
   data: any[] = [];
   highlightAvailable = false;
 
@@ -30,6 +31,7 @@ export class CritterBoardComponent implements OnInit {
   }
 
   openDialog(critter: any) {
+    critter.entityType = this.entityType;
     this.matDialog.open(CritterModalComponent, {
       data: critter,
     });
