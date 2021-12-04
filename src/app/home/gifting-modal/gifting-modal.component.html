@@ -2,13 +2,13 @@
   <div *ngIf="gifting && gifting.clothing" class="clothing">
     <mat-chip-list>
       <mat-chip *ngFor="let color of gifting.clothing.colors" [class]="color">
-        <span translate>{{ color }}</span>
+        <span translate>{{ color | titlecase }}</span>
       </mat-chip>
     </mat-chip-list>
 
     <mat-chip-list>
       <mat-chip *ngFor="let style of gifting.clothing.style" [class]="style">
-        <span translate>{{ style }}</span>
+        <span translate>{{ style | titlecase }}</span>
       </mat-chip>
     </mat-chip-list>
   </div>
