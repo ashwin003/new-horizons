@@ -5,6 +5,23 @@
     </mat-toolbar>
   </mat-card-title>
   <mat-card-content>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <mat-list>
+      <mat-list-item *ngFor="let villager of villagers">
+        <img
+          matListAvatar
+          defaultImage="assets/villagers.png"
+          [lazyLoad]="villager.iconUri"
+          [attr.alt]="getValue(villager.name, 'name')"
+        />
+        <h3 matLine>
+          <b>{{ getValue(villager.name, 'name') }}</b>
+        </h3>
+        <app-birthday
+          class="birthday-tile"
+          [month]="getMonthName(villager.birthdayString) | translate"
+          [date]="getDate(villager.birthdayString)"
+        ></app-birthday>
+      </mat-list-item>
+    </mat-list>
   </mat-card-content>
 </mat-card>

@@ -41,7 +41,7 @@ export class VillagerModalComponent implements OnInit {
     return birthdayString.split(' ')[0];
   }
 
-  getDate(birthdayString: string): string {
-    return birthdayString.split(' ')[1];
+  getDate(birthdayString: string): number {
+    return parseInt(birthdayString.split(' ')[1].replace('th', '').replace('nd', '').replace('st', ''));
   }
 }

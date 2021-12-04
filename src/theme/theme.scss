@@ -44,3 +44,11 @@ body {
     border-left-color: rgba(255, 255, 255, 0.12);
   }
 }
+
+.mat-list-item {
+  margin-bottom: 1em;
+}
+
+.mat-list-text {
+  align-items: flex-start !important;
+}

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Dexie, Table } from 'dexie';
-import { from, map } from 'rxjs';
+import { from, map, Observable } from 'rxjs';
 import { Favorite } from '../models/favorite';
 
 @Injectable({
@@ -22,6 +22,14 @@ export class SavedEntityService extends Dexie {
       entityType,
     };
     this.savedEntities.add(entity, fileName);
+  }
+
+  getAll(entityType: string): Observable<Favorite[]> {
+    return from(this.savedEntities.where({ entityType: entityType }).toArray());
+  }
+
+  getCount(entityType: string): Observable<number> {
+    return from(this.savedEntities.where({ entityType: entityType }).count());
   }
 
   remove(fileName: string) {

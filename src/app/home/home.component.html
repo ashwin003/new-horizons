@@ -1,22 +1,49 @@
 <div class="container">
-  <app-counter class="art" header="Art" [count]="count" headerType="primary" [isLoading]="isLoading"></app-counter>
+  <app-counter
+    class="art"
+    header="Art"
+    *ngIf="artAggregation"
+    [count]="artAggregation.owned"
+    [total]="artAggregation.total"
+    headerType="primary"
+    [isLoading]="artLoading"
+  ></app-counter>
   <app-counter
     class="fossils"
+    *ngIf="fossilAggregation"
     header="Fossils"
-    [count]="count"
+    [count]="fossilAggregation.owned"
+    [total]="fossilAggregation.total"
     headerType="accent"
-    [isLoading]="isLoading"
+    [isLoading]="fossilLoading"
   ></app-counter>
 
   <app-counter
     class="insects"
     header="Insects"
-    [count]="count"
+    *ngIf="bugAggregation"
+    [count]="bugAggregation.owned"
+    [total]="bugAggregation.total"
     headerType="default"
-    [isLoading]="isLoading"
+    [isLoading]="bugLoading"
   ></app-counter>
-  <app-counter class="fish" header="Fish" [count]="count" headerType="primary" [isLoading]="isLoading"></app-counter>
-  <app-counter class="sea" header="Sea Creatures" [count]="count" [isLoading]="isLoading"></app-counter>
+  <app-counter
+    class="fish"
+    header="Fish"
+    *ngIf="fishAggregation"
+    [count]="fishAggregation.owned"
+    [total]="fishAggregation.total"
+    headerType="primary"
+    [isLoading]="fishLoading"
+  ></app-counter>
+  <app-counter
+    class="sea"
+    header="Sea Creatures"
+    *ngIf="seaAggregation"
+    [count]="seaAggregation.owned"
+    [total]="seaAggregation.total"
+    [isLoading]="seaLoading"
+  ></app-counter>
 
   <app-owned-songs class="owned"></app-owned-songs>
   <app-upcoming-birthdays class="birthdays"></app-upcoming-birthdays>

@@ -12,6 +12,7 @@ export class CounterComponent implements OnInit {
 
   @Input() header = '';
   @Input() count = 0;
+  @Input() total = 0;
   @Input() headerType = 'primary';
   @Input() isLoading = false;
 }

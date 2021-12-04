@@ -13,5 +13,14 @@
 
   .mat-card-content {
     padding: 16px;
+
+    .mat-list-item {
+      &:hover {
+        background: #80808042;
+      }
+      .mat-icon {
+        vertical-align: middle;
+      }
+    }
   }
 }
