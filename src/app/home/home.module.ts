@@ -11,6 +11,7 @@ import { HomeComponent } from './home.component';
 import { UpcomingBirthdaysComponent } from './upcoming-birthdays/upcoming-birthdays.component';
 import { OwnedSongsComponent } from './owned-songs/owned-songs.component';
 import { BirthdayComponent } from './birthday/birthday.component';
+import { GiftingModalComponent } from './gifting-modal/gifting-modal.component';
 
 @NgModule({
   imports: [
@@ -22,6 +23,12 @@ import { BirthdayComponent } from './birthday/birthday.component';
     MaterialModule,
     HomeRoutingModule,
   ],
-  declarations: [HomeComponent, UpcomingBirthdaysComponent, OwnedSongsComponent, BirthdayComponent],
+  declarations: [
+    HomeComponent,
+    UpcomingBirthdaysComponent,
+    OwnedSongsComponent,
+    BirthdayComponent,
+    GiftingModalComponent,
+  ],
 })
 export class HomeModule {}

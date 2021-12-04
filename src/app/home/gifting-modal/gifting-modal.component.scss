@@ -1,0 +1,38 @@
+.gifting-modal-content {
+  margin: 0;
+  padding: 12px 24px;
+
+  .clothing {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5em;
+  }
+}
+
+.mat-chip {
+  background: var(--b, gray);
+  color: var(--c, white);
+  text-transform: uppercase;
+  &.gray {
+    --b: #90a4ae;
+  }
+  &.blue {
+    --b: #2196f3;
+  }
+  &.red {
+    --b: #f44336;
+  }
+  &.pink {
+    --b: #e91e63;
+  }
+  &.black {
+    --b: black;
+  }
+  &.purple {
+    --b: #673ab7;
+  }
+  &.yellow {
+    --b: #ffeb3b;
+    --c: black;
+  }
+}

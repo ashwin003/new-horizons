@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { TranslationService } from '@app/@shared/services/translation.service';
+import { GiftingModalComponent } from '../gifting-modal/gifting-modal.component';
 import { Villager } from '../models/villager';
 import { ListService } from '../services/list.service';
 
@@ -11,7 +13,11 @@ import { ListService } from '../services/list.service';
 export class UpcomingBirthdaysComponent implements OnInit {
   isLoading = false;
   villagers: Villager[] = [];
-  constructor(private translationService: TranslationService, private listService: ListService) {}
+  constructor(
+    private translationService: TranslationService,
+    private listService: ListService,
+    private matDialog: MatDialog
+  ) {}
 
   ngOnInit(): void {
     this.isLoading = true;
@@ -46,6 +52,12 @@ export class UpcomingBirthdaysComponent implements OnInit {
     const aDiff = getDifference(aDate, currentDate),
       bDiff = getDifference(bDate, currentDate);
     return aDiff - bDiff;
+  }
+
+  openModal(fileName: string) {
+    this.matDialog.open(GiftingModalComponent, {
+      data: fileName,
+    });
   }
 
   getValue(dictionary: Map<string, string>, prefix: string) {

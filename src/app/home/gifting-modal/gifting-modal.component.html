@@ -1,0 +1,15 @@
+<mat-dialog-content class="gifting-modal-content">
+  <div *ngIf="gifting && gifting.clothing" class="clothing">
+    <mat-chip-list>
+      <mat-chip *ngFor="let color of gifting.clothing.colors" [class]="color">
+        <span translate>{{ color }}</span>
+      </mat-chip>
+    </mat-chip-list>
+
+    <mat-chip-list>
+      <mat-chip *ngFor="let style of gifting.clothing.style" [class]="style">
+        <span translate>{{ style }}</span>
+      </mat-chip>
+    </mat-chip-list>
+  </div>
+</mat-dialog-content>

@@ -20,6 +20,7 @@
           class="birthday-tile"
           [month]="getMonthName(villager.birthdayString) | translate"
           [date]="getDate(villager.birthdayString)"
+          (click)="openModal(villager.fileName)"
         ></app-birthday>
       </mat-list-item>
     </mat-list>

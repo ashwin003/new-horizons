@@ -1,0 +1,44 @@
+{
+  "der05": {
+    "clothing": {
+      "colors": ["gray"],
+      "style": ["gorgeous"]
+    }
+  },
+  "dog17": {
+    "clothing": {
+      "colors": ["black", "purple"],
+      "style": ["cool", "elegant"]
+    }
+  },
+  "goa09": {
+    "clothing": {
+      "colors": ["gray", "blue"],
+      "style": ["simple", "cute"]
+    }
+  },
+  "goa00": {
+    "clothing": {
+      "colors": ["red", "pink"],
+      "style": ["cute", "elegant"]
+    }
+  },
+  "mnk06": {
+    "clothing": {
+      "colors": ["blue", "yellow"],
+      "style": ["active", "simple"]
+    }
+  },
+  "ocp01": {
+    "clothing": {
+      "colors": ["pink", "red"],
+      "style": ["cute"]
+    }
+  },
+  "default": {
+    "clothing": {
+      "colors": [],
+      "style": []
+    }
+  }
+}
