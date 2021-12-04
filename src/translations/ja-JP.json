@@ -12,6 +12,7 @@
   "Fossils": "化石",
   "Hello world !": "Hello world !",
   "Highlight currently available": "現在入手可能なハイライト",
+  "Highlight pending": "保留中のハイライト",
   "Home": "始める",
   "Insects": "昆虫",
   "Museum": "美術館",
@@ -123,5 +124,20 @@
   "8 PM": "8 PM",
   "9 PM": "9 PM",
   "10 PM": "10 PM",
-  "11 PM": "11 PM"
+  "11 PM": "11 PM",
+
+  "Black": "黒",
+  "Blue": "青",
+  "Gray": "グレー",
+  "Pink": "ピンク",
+  "Purple": "紫の",
+  "Red": "赤",
+  "Yellow": "黄",
+
+  "Active": "アクティブ",
+  "Cool": "いいね",
+  "Cute": "かわいい",
+  "Elegant": "エレガント",
+  "Gorgeous": "素敵",
+  "Simple": "単純"
 }

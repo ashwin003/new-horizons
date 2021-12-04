@@ -12,6 +12,7 @@
   "Fossils": "Fossili",
   "Hello world !": "Ciao Mondo !",
   "Highlight currently available": "Evidenzia Attualmente disponibile",
+  "Highlight pending": "Evidenzia in attesa",
   "Home": "Inizio",
   "Insects": "Insekten",
   "Museum": "Museo",
@@ -123,5 +124,20 @@
   "8 PM": "8 PM",
   "9 PM": "9 PM",
   "10 PM": "10 PM",
-  "11 PM": "11 PM"
+  "11 PM": "11 PM",
+
+  "Black": "Nero",
+  "Blue": "Blu",
+  "Gray": "Grigio",
+  "Pink": "Rosa",
+  "Purple": "Viola",
+  "Red": "rosso",
+  "Yellow": "Giallo",
+
+  "Active": "Attivo",
+  "Cool": "Freddo",
+  "Cute": "Carino",
+  "Elegant": "Elegante",
+  "Gorgeous": "Bellissimo",
+  "Simple": "Semplice"
 }

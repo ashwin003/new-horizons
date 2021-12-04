@@ -123,5 +123,20 @@
   "8 PM": "8 PM",
   "9 PM": "9 PM",
   "10 PM": "10 PM",
-  "11 PM": "11 PM"
+  "11 PM": "11 PM",
+
+  "Black": "Black",
+  "Blue": "Blue",
+  "Gray": "Gray",
+  "Pink": "Pink",
+  "Purple": "Purple",
+  "Red": "Red",
+  "Yellow": "Yellow",
+
+  "Active": "Active",
+  "Cool": "Cool",
+  "Cute": "Cute",
+  "Elegant": "Elegant",
+  "Gorgeous": "Gorgeous",
+  "Simple": "Simple"
 }

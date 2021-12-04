@@ -12,6 +12,7 @@
   "Fossils": "Fossils",
   "Hello world !": "Hello world !",
   "Highlight currently available": "현재 하이라이트 사용할 수 있습니다",
+  "Highlight pending": "보류중인 하이라이트",
   "Home": "시작",
   "Insects": "곤충",
   "Museum": "박물관",
@@ -123,5 +124,20 @@
   "8 PM": "8 PM",
   "9 PM": "9 PM",
   "10 PM": "10 PM",
-  "11 PM": "11 PM"
+  "11 PM": "11 PM",
+
+  "Black": "검은 색",
+  "Blue": "파란색",
+  "Gray": "회색",
+  "Pink": "분홍",
+  "Purple": "보라색",
+  "Red": "빨간색",
+  "Yellow": "노란색",
+
+  "Active": "활동적인",
+  "Cool": "멋있는",
+  "Cute": "귀여워",
+  "Elegant": "우아한",
+  "Gorgeous": "아주 멋진",
+  "Simple": "단순한"
 }
