@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1638803591101,
+  "timestamp": 1638804739465,
   "index": "/new-horizons/index.html",
   "assetGroups": [
     {
@@ -18,7 +18,7 @@
         "/new-horizons/686.1f3f1f823f71dd8f.js",
         "/new-horizons/favicon.ico",
         "/new-horizons/index.html",
-        "/new-horizons/main.66163df174df19c6.js",
+        "/new-horizons/main.d772d1206750ad4f.js",
         "/new-horizons/manifest.webmanifest",
         "/new-horizons/polyfills.3c4f215675e75e88.js",
         "/new-horizons/runtime.629ce4075149906f.js",
@@ -66,8 +66,8 @@
     "/new-horizons/assets/ngx-rocket-logo@192.png": "461b730f9c6dc818f8af9acbe62dfde24dc02d7a",
     "/new-horizons/assets/villagers.png": "f2f871ccb3c50b20ac89ea382c6577bc64a4768c",
     "/new-horizons/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
-    "/new-horizons/index.html": "b71d877425a67a0614fe7c325fc9b8a496d1b5d5",
-    "/new-horizons/main.66163df174df19c6.js": "3a7b83f73eb345cd71c520eecdfe5f779542cb52",
+    "/new-horizons/index.html": "01fd9033619257a7f9652ce5c14d12241eb68b64",
+    "/new-horizons/main.d772d1206750ad4f.js": "b4cf2683be68b95e52164ea8903036163b6d3cf9",
     "/new-horizons/manifest.webmanifest": "7c6f7fa8cf21b2702b8efd7ab6008ebf5a250a48",
     "/new-horizons/polyfills.3c4f215675e75e88.js": "5f247ddf07cb6016bd0f6f7b46f541f182ebc7ea",
     "/new-horizons/runtime.629ce4075149906f.js": "3d96b5748aca86aaf6ac6e03677705e0b316710e",
