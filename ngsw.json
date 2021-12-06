@@ -1,0 +1,95 @@
+{
+  "configVersion": 1,
+  "timestamp": 1638803591101,
+  "index": "/new-horizons/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/new-horizons/295.03b03e51cfda15ff.js",
+        "/new-horizons/340.a48a8c9a007f340b.js",
+        "/new-horizons/404.ac28caabd5b82b03.js",
+        "/new-horizons/529.633317ab49c77b2d.js",
+        "/new-horizons/686.1f3f1f823f71dd8f.js",
+        "/new-horizons/favicon.ico",
+        "/new-horizons/index.html",
+        "/new-horizons/main.66163df174df19c6.js",
+        "/new-horizons/manifest.webmanifest",
+        "/new-horizons/polyfills.3c4f215675e75e88.js",
+        "/new-horizons/runtime.629ce4075149906f.js",
+        "/new-horizons/styles.337c92738c4658c7.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/new-horizons/MaterialIcons-Regular.4835719c5cad0589.eot",
+        "/new-horizons/MaterialIcons-Regular.c1d81adbcabba679.ttf",
+        "/new-horizons/MaterialIcons-Regular.f852a2b61645d303.woff",
+        "/new-horizons/MaterialIcons-Regular.fc6b597816978750.woff2",
+        "/new-horizons/apple-touch-icon.png",
+        "/new-horizons/assets/data/gifting.json",
+        "/new-horizons/assets/fonts/FinkHeavy.ttf",
+        "/new-horizons/assets/ngx-rocket-logo.png",
+        "/new-horizons/assets/ngx-rocket-logo@192.png",
+        "/new-horizons/assets/villagers.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/new-horizons/295.03b03e51cfda15ff.js": "4f8b8b57953af5e99ac11b61fdb8000b6a2f4d21",
+    "/new-horizons/340.a48a8c9a007f340b.js": "58e1ed6fed7f63f2bebcfa6c7021124bad379e20",
+    "/new-horizons/404.ac28caabd5b82b03.js": "cc93899420321eee22428f0ac0acee02e3606ea5",
+    "/new-horizons/529.633317ab49c77b2d.js": "01e5ed97eb625689e8175729888b395e9ed4b90e",
+    "/new-horizons/686.1f3f1f823f71dd8f.js": "652793ce3de7d32d670e24b7a36a6eee01c1d062",
+    "/new-horizons/MaterialIcons-Regular.4835719c5cad0589.eot": "fd88b965c3cf932d029b064805dc57e2f64cf0ba",
+    "/new-horizons/MaterialIcons-Regular.c1d81adbcabba679.ttf": "eb1eeaf2e84f626270d2b846bd9b603ba0c06ee8",
+    "/new-horizons/MaterialIcons-Regular.f852a2b61645d303.woff": "8223f84d5b9a9772a12fb343490196aa6cd119c4",
+    "/new-horizons/MaterialIcons-Regular.fc6b597816978750.woff2": "9a50c0ae80009fba6c03f7aaed10c4eaa819abf4",
+    "/new-horizons/apple-touch-icon.png": "229df2094cc590088de00ea97a1eb4e4493101d2",
+    "/new-horizons/assets/data/gifting.json": "ae8f8562967156dc779a37273c984e3840d080c7",
+    "/new-horizons/assets/fonts/FinkHeavy.ttf": "33feeddea2f837484a0eaf61233fe9a697e018a0",
+    "/new-horizons/assets/ngx-rocket-logo.png": "0ac53fd27406fe5a36e68285315fb0012e54058e",
+    "/new-horizons/assets/ngx-rocket-logo@192.png": "461b730f9c6dc818f8af9acbe62dfde24dc02d7a",
+    "/new-horizons/assets/villagers.png": "f2f871ccb3c50b20ac89ea382c6577bc64a4768c",
+    "/new-horizons/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
+    "/new-horizons/index.html": "b71d877425a67a0614fe7c325fc9b8a496d1b5d5",
+    "/new-horizons/main.66163df174df19c6.js": "3a7b83f73eb345cd71c520eecdfe5f779542cb52",
+    "/new-horizons/manifest.webmanifest": "7c6f7fa8cf21b2702b8efd7ab6008ebf5a250a48",
+    "/new-horizons/polyfills.3c4f215675e75e88.js": "5f247ddf07cb6016bd0f6f7b46f541f182ebc7ea",
+    "/new-horizons/runtime.629ce4075149906f.js": "3d96b5748aca86aaf6ac6e03677705e0b316710e",
+    "/new-horizons/styles.337c92738c4658c7.css": "f58a8c30f1f43406e27b393ec6abdd6256ffbd8d"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
