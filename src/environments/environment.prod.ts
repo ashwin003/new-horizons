@@ -9,7 +9,7 @@ import { env } from './.env';
 export const environment = {
   production: true,
   version: env.npm_package_version,
-  serverUrl: 'http://acnhapi.com',
+  serverUrl: 'https://acnhapi.com',
   defaultLanguage: 'en-US',
   supportedLanguages: ['de-DE', 'en-US', 'en-GB', 'es-ES', 'fr-FR', 'it-IT', 'ja-JP', 'ko-KR', 'zh-CN', 'zh-TW'],
 };

@@ -10,7 +10,7 @@ const proxyConfig = [
   {
     context: '/v1',
     pathRewrite: { '^/v1': '' },
-    target: 'http://acnhapi.com',
+    target: 'https://acnhapi.com',
     changeOrigin: true,
     secure: false,
   },
