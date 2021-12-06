@@ -24,3 +24,19 @@
 .mat-icon {
   vertical-align: middle;
 }
+
+fieldset {
+  width: max-content;
+  margin: 0 auto;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 10px;
+      text-align: left;
+    }
+  }
+}

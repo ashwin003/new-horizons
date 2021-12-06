@@ -10,6 +10,8 @@ import { environment } from '@env/environment';
 export class AboutComponent implements OnInit {
   version: string | null = environment.version;
 
+  dataSources = ['http://acnhapi.com/', 'https://nookplaza.net/'];
+
   constructor() {}
 
   ngOnInit() {}

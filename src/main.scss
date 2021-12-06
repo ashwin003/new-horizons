@@ -28,3 +28,10 @@
 
 // Theme customization
 @import "theme/theme";
+
+a {
+  color: map-get($map: $light-primary, $key: 500);
+  @media (prefers-color-scheme: dark) {
+    color: map-get($map: $dark-primary, $key: 500);
+  }
+}

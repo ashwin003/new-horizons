@@ -5,9 +5,9 @@
   width: 6em;
   padding: 0.5em;
   border-radius: 5px;
-  color: map-get($map: $light-primary, $key: 700);
+  color: map-get($map: $light-accent, $key: "A400");
   @media (prefers-color-scheme: dark) {
-    color: map-get($map: $dark-primary, $key: 700);
+    color: map-get($map: $dark-accent, $key: "A400");
     border-color: map-get($map: $dark-accent, $key: "A400");
   }
 

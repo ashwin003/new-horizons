@@ -43,7 +43,7 @@ export class FossilsComponent implements OnInit {
   }
 
   sorter(a: any, b: any): any {
-    const sortOrder = ['skull', 'chest', 'torso', 'pelvis', 'tail'];
+    const sortOrder = ['skull', 'neck', 'chest', 'torso', 'pelvis', 'tail', 'tip'];
     const aPart = a['part-of'],
       bPart = b['part-of'];
 

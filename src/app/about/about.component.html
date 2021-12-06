@@ -4,8 +4,14 @@
       <h1 translate>APP_NAME</h1>
     </mat-card-title>
     <mat-card-subtitle>
-      <span translate>Data from</span>&nbsp;
-      <a href="http://acnhapi.com/">http://acnhapi.com/</a>
+      <fieldset>
+        <legend translate>Data from</legend>
+        <ul>
+          <li *ngFor="let dataSource of dataSources">
+            <a [attr.href]="dataSource" target="_blank">{{ dataSource }}</a>
+          </li>
+        </ul>
+      </fieldset>
     </mat-card-subtitle>
     <mat-card-content>
       <mat-icon>code</mat-icon>
