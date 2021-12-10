@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1638804739465,
+  "timestamp": 1639148055638,
   "index": "/new-horizons/index.html",
   "assetGroups": [
     {
@@ -11,18 +11,18 @@
         "ignoreVary": true
       },
       "urls": [
-        "/new-horizons/295.03b03e51cfda15ff.js",
-        "/new-horizons/340.a48a8c9a007f340b.js",
-        "/new-horizons/404.ac28caabd5b82b03.js",
-        "/new-horizons/529.633317ab49c77b2d.js",
-        "/new-horizons/686.1f3f1f823f71dd8f.js",
+        "/new-horizons/2.fbef7c133c1649af.js",
+        "/new-horizons/314.ca92281ad93a04df.js",
+        "/new-horizons/627.412a2b1db2bf47b1.js",
+        "/new-horizons/700.354b38d54bfcbc4f.js",
+        "/new-horizons/942.0f04443a4837419d.js",
         "/new-horizons/favicon.ico",
         "/new-horizons/index.html",
-        "/new-horizons/main.d772d1206750ad4f.js",
+        "/new-horizons/main.2733bff89569f455.js",
         "/new-horizons/manifest.webmanifest",
-        "/new-horizons/polyfills.3c4f215675e75e88.js",
-        "/new-horizons/runtime.629ce4075149906f.js",
-        "/new-horizons/styles.337c92738c4658c7.css"
+        "/new-horizons/polyfills.0957987ab35a2fcb.js",
+        "/new-horizons/runtime.c6da8fcb268469b7.js",
+        "/new-horizons/styles.12c26b64100f9185.css"
       ],
       "patterns": []
     },
@@ -50,11 +50,11 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/new-horizons/295.03b03e51cfda15ff.js": "4f8b8b57953af5e99ac11b61fdb8000b6a2f4d21",
-    "/new-horizons/340.a48a8c9a007f340b.js": "58e1ed6fed7f63f2bebcfa6c7021124bad379e20",
-    "/new-horizons/404.ac28caabd5b82b03.js": "cc93899420321eee22428f0ac0acee02e3606ea5",
-    "/new-horizons/529.633317ab49c77b2d.js": "01e5ed97eb625689e8175729888b395e9ed4b90e",
-    "/new-horizons/686.1f3f1f823f71dd8f.js": "652793ce3de7d32d670e24b7a36a6eee01c1d062",
+    "/new-horizons/2.fbef7c133c1649af.js": "7df1c8aabcaa2e5011bf79b77a755026cf80bb4a",
+    "/new-horizons/314.ca92281ad93a04df.js": "40b839e137d6380bf135512c44a56a3bd2be2391",
+    "/new-horizons/627.412a2b1db2bf47b1.js": "48ea5bb416869e9b458adafafb5c7def0f9942a7",
+    "/new-horizons/700.354b38d54bfcbc4f.js": "c61ed43bc12e8aea634f79c34abe3e42938c2f90",
+    "/new-horizons/942.0f04443a4837419d.js": "802d666556e36695180acd67ddf29ec5d725e429",
     "/new-horizons/MaterialIcons-Regular.4835719c5cad0589.eot": "fd88b965c3cf932d029b064805dc57e2f64cf0ba",
     "/new-horizons/MaterialIcons-Regular.c1d81adbcabba679.ttf": "eb1eeaf2e84f626270d2b846bd9b603ba0c06ee8",
     "/new-horizons/MaterialIcons-Regular.f852a2b61645d303.woff": "8223f84d5b9a9772a12fb343490196aa6cd119c4",
@@ -66,12 +66,12 @@
     "/new-horizons/assets/ngx-rocket-logo@192.png": "461b730f9c6dc818f8af9acbe62dfde24dc02d7a",
     "/new-horizons/assets/villagers.png": "f2f871ccb3c50b20ac89ea382c6577bc64a4768c",
     "/new-horizons/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
-    "/new-horizons/index.html": "01fd9033619257a7f9652ce5c14d12241eb68b64",
-    "/new-horizons/main.d772d1206750ad4f.js": "b4cf2683be68b95e52164ea8903036163b6d3cf9",
+    "/new-horizons/index.html": "5a0a80cb18aec89ee7e5a63eb364160636e146a5",
+    "/new-horizons/main.2733bff89569f455.js": "0af9891ac68a64a761988dc4e095f439112cf12c",
     "/new-horizons/manifest.webmanifest": "7c6f7fa8cf21b2702b8efd7ab6008ebf5a250a48",
-    "/new-horizons/polyfills.3c4f215675e75e88.js": "5f247ddf07cb6016bd0f6f7b46f541f182ebc7ea",
-    "/new-horizons/runtime.629ce4075149906f.js": "3d96b5748aca86aaf6ac6e03677705e0b316710e",
-    "/new-horizons/styles.337c92738c4658c7.css": "f58a8c30f1f43406e27b393ec6abdd6256ffbd8d"
+    "/new-horizons/polyfills.0957987ab35a2fcb.js": "4db316008f4e36a2a0b620aed42911aa32e948c4",
+    "/new-horizons/runtime.c6da8fcb268469b7.js": "9ca806c4dceb6491b67b2a304c183dc4f150d26d",
+    "/new-horizons/styles.12c26b64100f9185.css": "9e3b099d3e214c514da55a2ebf8a271891982670"
   },
   "navigationUrls": [
     {
